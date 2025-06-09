@@ -41,13 +41,38 @@
     <version>4.29.0</version>
 </dependency>
 
+<dependency>
+    <groupId>io.cucumber</groupId>
+    <artifactId>cucumber-testng</artifactId>
+    <version>7.0.0</version>
+</dependency>
+
 
     <dependency>
         <groupId>org.testng</groupId>
         <artifactId>testng</artifactId>
-        <version>7.4.0</version>
+        <version>7.8.0</version>
         <scope>test</scope>
     </dependency>
 
+<!--Extent Report -->
+<dependency>
+    <groupId>com.aventstack</groupId>
+    <artifactId>extentreports</artifactId>
+    <version>5.0.9</version>
+</dependency>
     </dependencies>
+    <build>
+    <plugins>
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-compiler-plugin</artifactId>
+            <version>3.8.1</version> <!-- Ensure latest stable version -->
+            <configuration>
+                <source>17</source>  <!-- Match your Java version -->
+                <target>17</target>
+            </configuration>
+        </plugin>
+    </plugins>
+</build>
 </project>
