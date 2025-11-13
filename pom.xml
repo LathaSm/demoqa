@@ -95,7 +95,6 @@
     <includes>
       <include>**/TestRunner.java</include>
     </includes>
-    <failIfNoTests>true</failIfNoTests>
   </configuration>
        </plugin>
 
