@@ -75,7 +75,8 @@ public void user_clicks_on_submit_button() {
 public void user_should_able_to_see_the_entered_details() {
     // Write code here that turns the phrase above into concrete actions
 	   test.info("Verifying the results");
-	demoqatextbox.verifythedetails();
+	System.out.println(demoqatextbox.getDisplayedResultText());   
+demoqatextbox.verifythedetails();
 	
 	/*
 	 * String actualText_name=demoqatextbox.getDisplayedResultText();

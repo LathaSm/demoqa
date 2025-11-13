@@ -2,6 +2,7 @@ package pages;
 
 import java.time.Duration;
 import java.util.List;
+import core.DriverFactory;
 
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
@@ -22,9 +23,9 @@ public class BasePage {
     protected LocatorUtil locatorutil;
     
     public BasePage(WebDriver driver, ConfigReader configReader) {
-        this.driver = driver;
+        this.driver =DriverFactory.getDriver();
         this.configReader = configReader;
-        this.locatorutil=new LocatorUtil(driver);
+        this.locatorutil=new LocatorUtil(driver,configReader);
     }
 
     public WebElement findElement(String key, Duration timeout) {

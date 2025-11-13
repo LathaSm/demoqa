@@ -1,13 +1,12 @@
 Feature: Login DemoQA website
 #Background: 
 #Given User is on the DemoQA page
-
 @skip
 Scenario: Verifying the DemoQA page
 When User click on the Elements Section
 Then User should be redirected to elements page
 
-
+@skip
 Scenario: Verifying the DemoQA text page
 Given User is on the DemoQA text page
 When User enters the Full Name,Email,Current Address,Permanent Address
@@ -81,16 +80,14 @@ When User clicks on Right click button
 And User able to see the valid Right click message
 When User clicks on Click Me button
 And User able to see the valid Click Me message
-@skip
+
 Scenario: Verifying the DemoQA links page
 Given User is on the DemoQA links page
 When User click on the Home and HomeoEJgv
 Then User able to see both the links in new tab
-@skip
-Scenario: Verifying the DemoQA links page
-Given User is on the DemoQA links page
 When User click on Created 
 Then User able to see the status code and status text
+
 @skip
 Scenario: Verifying the DemoQA brokenlinks page
 Given User is on the DemoQA brokenlinks page
@@ -101,11 +98,8 @@ Scenario: Verifying the DemoQA brokenlinks page
 Given User is on the DemoQA brokenlinks page
 When User click on Invalid link 
 Then User able to see the error message
-@skip
-Scenario: Verifying the DemoQA Practiseform page
-Given User is on the DemoQA Practiseform page
-When User enters the Student data
-Then User able click on submit button
+
+
 
 
 

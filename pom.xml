@@ -10,7 +10,7 @@
 <dependency>
     <groupId>io.cucumber</groupId>
     <artifactId>cucumber-java</artifactId>
-    <version>7.18.0</version>
+    <version>7.14.0</version>
 </dependency>
 <dependency>
     <groupId>org.apache.poi</groupId>
@@ -32,7 +32,16 @@
     <version>7.18.1</version>
     <scope>test</scope>
 </dependency>
-
+<dependency>
+  <groupId>io.github.bonigarcia</groupId>
+  <artifactId>webdrivermanager</artifactId>
+  <version>5.7.0</version>
+</dependency>
+<dependency>
+  <groupId>io.github.bonigarcia</groupId>
+  <artifactId>webdrivermanager</artifactId>
+  <version>5.7.0</version>
+</dependency>
 <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
 <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
 <dependency>
@@ -41,25 +50,25 @@
     <version>4.29.0</version>
 </dependency>
 
-<!--<dependency>
+<dependency>
     <groupId>io.cucumber</groupId>
     <artifactId>cucumber-testng</artifactId>
-    <version>7.0.0</version>
-</dependency>-->
+    <version>7.11.2</version>
+</dependency>
 <dependency>
   <groupId>org.projectlombok</groupId>
   <artifactId>lombok</artifactId>
   <version>1.18.28</version>
   <scope>provided</scope>
 </dependency>
+      <!-- TestNG -->
 
-   <!-- <dependency>
+    <dependency>
         <groupId>org.testng</groupId>
         <artifactId>testng</artifactId>
-        <version>7.8.0</version>
+        <version>7.7.0</version>
         <scope>test</scope>
     </dependency>
--->
 <!--Extent Report -->
 <dependency>
     <groupId>com.aventstack</groupId>
@@ -88,7 +97,8 @@
     </includes>
     <failIfNoTests>true</failIfNoTests>
   </configuration>
-</plugin>
+       </plugin>
+
 
     </plugins>
 </build>

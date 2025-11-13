@@ -12,8 +12,8 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 public class LocatorUtil {
 	  public WebDriver driver;
 	  private ConfigReader configReader;
-	    public LocatorUtil(WebDriver driver) {
-	        this.driver = driver;
+	    public LocatorUtil(WebDriver driver,ConfigReader configReader) {
+	        this.driver = driver;	
 	        this.configReader = configReader;
 	    }
 	 public static By getLocator(String locatorType, String locatorValue) {

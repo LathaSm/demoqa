@@ -1,23 +1,22 @@
 package runners;
 
-import org.junit.runner.RunWith;
 import io.cucumber.junit.Cucumber;
-
-
 import io.cucumber.junit.CucumberOptions;
+import org.junit.runner.RunWith;
+
+
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-    features = "src/test/resources/features/Login.feature",
-    glue = "stepdefinitions",
-       		plugin = {
-    				  "pretty",
-    				  "json:target/cucumber-reports/Cucumber.json",
-    				  "html:target/cucumber-reports"
-    				},
+  features = "src/test/resources/features",
+  glue = "stepdefinitions",
+  
+  tags = "not @skip", // 👈 This excludes all @skip scenarios
+  plugin = {  "pretty", "json:target/cucumber-reports/report.json",
+		  "html:target/cucumber-reports/index.html"
 
-    tags = "not @skip"
+},
+  monochrome = true
+
 )
-public class TestRunner {
-
-}
+public class TestRunner {}

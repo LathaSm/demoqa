@@ -25,7 +25,7 @@ public class LoginStep {
 	@When("User click on the Elements Section")
 	public void user_click_on_the_elements_section() throws InterruptedException {
 	    // Write code here that turns the phrase above into concrete actions
-		//demoqapage.clickElementsButton();
+	//	demoqapage.clickElementsButton();
 	    
 	}
 
@@ -33,7 +33,7 @@ public class LoginStep {
 	@Then("User should be redirected to elements page")
 	public void user_should_be_redirected_to_elements_page() {
 	    // Write code here that turns the phrase above into concrete actions
-	//	driver.quit();
+	driver.quit();
 		System.out.println("Step-3 passed");
 	    
 	}
