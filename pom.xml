@@ -76,6 +76,15 @@
     <version>5.0.9</version>
 </dependency>
     </dependencies>
+  <configuration>
+  <systemProperties>
+    <property>
+      <name>cucumber.options</name>
+      <value>--plugin pretty</value>
+    </property>
+  </systemProperties>
+</configuration>
+
     <build>
     <plugins>
         <plugin>
@@ -101,4 +110,5 @@
 
     </plugins>
 </build>
+
 </project>
