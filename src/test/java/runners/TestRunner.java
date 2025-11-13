@@ -13,10 +13,11 @@ import org.junit.runner.RunWith;
   
   tags = "not @skip", // 👈 This excludes all @skip scenarios
   plugin = {  "pretty", "json:target/cucumber-reports/report.json",
-		  "html:target/cucumber-reports/index.html"
+		  "html:target/cucumber-reports/html/index.html"
 
 },
   monochrome = true
 
 )
 public class TestRunner {}
+
